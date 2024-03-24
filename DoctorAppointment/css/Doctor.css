@@ -1,0 +1,32 @@
+﻿
+
+/*----------------------------------------Modification----------------------------------------------------*/
+
+
+.log_container{ width:90%; margin:0 auto; border-radius: 7px; border: 1px solid #cccccc; }
+.logo_container{ width:90%; margin:0 auto; border-radius: 7px; border: 1px solid #cccccc;}
+
+#loginImg{width:100%; height:500px; display:block}
+#title{ text-align:center; font-size:x-large; display:block; font-weight:600;}
+#title2{ text-align:center; font-size:medium; display:block; font-weight:200;}
+
+.textBox{padding:7px; border:1px solid #cccccc; border-radius:7px; display:block; resize:none; width:96% ; font-size:0.9em }
+
+.login{ width:100%; padding:7px; border-radius:7px;background:#29AB87; color:#fff}
+
+.forget{ text-align:center; }
+
+.forget a{  text-decoration:none; color:#0099cc;}
+
+.doctor-login{ text-align:center;}
+
+.doctor-login a{ color: #e8801c;}
+
+
+/*================================forgot password===============================================================*/
+
+.forgotContainer{width:350px; border:1px solid #ccc; border-radius:5px}
+.txtForgetMail{background:url('../Images/Icons/email.png') no-repeat left 10px center; border-radius:5px; width:240px; height:25px; border:1px solid #ccc; padding:3px; padding-left:40px; font-size:0.8em}
+.BtnSubmit{width:285px; height:35px; border:1px solid #ccc; cursor:pointer; border-radius:5px; background-color:#1F9170; color:#fff;}
+.txtForgetMNO{ background:url('../Images/Icons/Mobile.png') no-repeat left 10px center; border-radius:5px; width:240px; height:25px; border:1px solid #ccc; padding:3px; padding-left:40px; font-size:0.8em}
+

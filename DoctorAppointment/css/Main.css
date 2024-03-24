@@ -1,0 +1,138 @@
+﻿* {
+    border-style: none;
+    border-color: inherit;
+    border-width: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+body {
+    background: #ffffff
+}
+
+
+/*-----------------------------------------------------Modification--------------------------------------------------------------------*/
+
+
+.logo-container{background:url('../images/Icons/your-doctor-background.png') no-repeat center center; display:inline-block; height:70px; width:270px; float:left}
+.navBtn{background:url('../images/icons/hamburg.png') no-repeat right center; display:none; float:right; height:32px; width:32px; margin-top:15px}
+.navMain ul{height:70px}
+.navMain li{display: inline-block; margin-top:23px;}
+.navMain a{text-decoration:none; color:black; padding:10px; margin-right:20px; border-bottom:solid 2px white;transition:border-bottom 0.6s ease-in-out}
+.navMain a:hover{ border-bottom:2px solid #29AB87;}
+.button-div{float:right;  background-color: #fff; border-radius: 7px;  text-align:center; margin-top:12px; position:relative }
+.signupBtn {float:right; text-align:center; margin-top:14px; border: none; border-radius: 5px; background-color: #fff; font-size: 17px; cursor: pointer; text-align:center; margin-right:5px; padding:5px }
+.loginBtn {float:right; text-align:center; margin-top:14px; border: none; border-radius: 5px; font-size: 17px; font-weight: 600;color: #fff; background:#29AB87; cursor: pointer; padding:5px 10px 5px 10px}
+.loginBtn:hover { background-color: #1F9170; }
+.signupBtn:hover { border: 1px solid #29AB87;}
+#dropdown_Sign{display:none; background:#333; width:150px; float:right}
+#dropdown_Sign a{display:block; padding: 10px 40px 10px 60px; position:absolute}
+#dropdown_menu{display:none; background:#333; width:150px; position:absolute}
+#dropdown_menu a{display:block; padding: 10px 40px 10px 60px;}
+.userLog{background:url('../images/icons/user icon.png') no-repeat left 25px center; background-size:25px; border-bottom:1px solid #ffff; cursor:pointer; }
+.docLog{background:url('../images/icons/doctorStethoscope.png') no-repeat left 25px center; background-size:28px; cursor:pointer; position:absolute}
+
+.searchBar{height:400px; background:url('../images/Icons/Background.jpg ') no-repeat center center; background-size:cover; width:100%; border-radius:0px; }
+.overlay{height:400px;background-size:cover; width:100%; border-radius:0px; background:rgba(0,0,0,0.3); }
+.txtSearch{width:500px; height:30px; margin-left:80px; font-size:0.9em; padding:5px 0 5px 10px; border-radius:5px; color:#7c7373; background:url('../images/icons/search icon.png') no-repeat left 5px center #fff; padding-left:30px; border:1px solid rgb(163,177,198,0.6);  }
+
+.searchBtn{width:200px;  height:40px; font-size:1em; padding:4px; border-radius:5px; display:inline-block; vertical-align:bottom; cursor:pointer; background-color:#333333; color:white}
+
+.search_Col{ width:900px; margin:0 auto; display:block;}
+
+
+.registerDoc{cursor:pointer; background-color:#333333; color:white; padding:10px}
+
+
+
+
+/*---------------------------------------------Responsive--------------------------------------------------*/
+@media screen and (max-width: 1200px) {
+    .col_1200{width:100%}
+    #dropdown_Sign {
+        display: none;
+        position: absolute;
+        background-color: #333333;
+        color:white;
+        border-radius: 8px;
+        right: 5px;
+    }
+    #dropdown_menu {
+        display: none;
+        position: absolute;
+        background-color: #333333;
+        color: white;
+        top: 60px;
+        border-radius: 8px;
+        right: 5px;
+    }
+}
+@media screen and (max-width: 900px)
+{
+    
+    .navMain{display:none}    
+    .navBtn{display:block; margin-right:10px; }
+}
+@media screen and (max-width: 500px)
+{
+    .signupBtn{ display: none}
+
+    .loginBtn{ display:block}
+
+}
+@media screen and (max-width: 800px)
+{
+    .searchBtn{ width:150px}
+    .txtSearch{width:350px}
+
+}
+@media screen and (max-width: 600px)
+{
+    .searchBtn{ width:80px}
+    .txtSearch{width:250px}
+
+}
+@media screen and (max-width: 430px)
+{
+    .searchBtn{ width:80px}
+    .txtSearch{width:200px}
+    .img-box{display:none}
+    .txt-box{ width:200px;}
+    .doctors-details{ width:300px;}
+    .txt-details{ width: 200px;}
+}
+
+
+/*============================== search-doctor =====================================*/
+
+
+.doctors-details{ height:300px; width:600px; background:#fff; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; }
+.doc-icon{ width:150px; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; }
+.img-box{ width: 200px; float: left}
+.txt-box{ width:400px; float: left; cursor:pointer }
+.txt-details{ font-size:small; background-color:#29AB87; border-radius:20%;}
+.txt-speciality{ font-size:small; }
+.txt-exp{ font-size:small; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; padding:2px; border-radius:3px;}
+.check-availability{ font-size:small; font-weight:bold;}
+.book-appointment{ font-size:0.8em; font-weight:600; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; padding:10px; border-radius:3px; background-color:blue; color:#fff }
+.consult-now{ font-size:0.8em; font-weight:600; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; padding:10px; border-radius:3px;  margin-left:20px; }
+.txt-header{ font-size:x-large; font-weight:600}
+
+
+/*============================== search-doctor Responsive =====================================*/
+
+@media screen and (max-width: 1200px)
+{
+    .doctors-details{ display:block}
+}
+@media screen and (max-width: 600px)
+{
+    .doctors-details{ width: 400px;}
+    .txt-details{ width: 200px;}
+    
+    .txt-box{ width: 200px;}
+}

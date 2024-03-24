@@ -1,0 +1,10 @@
+﻿.formImg{width:100%;}
+.form-container{width:520px; border:1px solid #dcdcdc; border-radius:5px}
+.heading{color:#000; font-size:x-large; font-family:Arial;}
+.lblName{color:#808080; padding-left:22px; font-size:0.9em}
+.full-name{padding-left:10px; border:1px solid #dcdcdc; width:80%; border-radius:5px; margin-left:15px; height:30px; font-size:0.8em }
+.chooseCity{border:1px solid #dcdcdc; width:83%; margin-left:15px; border-radius:5px; height:30px; font-size:0.8em; }
+.chooseGender{border:1px solid #dcdcdc; width:83%; margin-left:15px; border-radius:5px; height:30px; font-size:0.8em; }
+.email{padding-left:10px; border:1px solid #dcdcdc; width:90%; border-radius:5px; margin-left:15px; height:30px; font-size:0.8em}
+.password{padding-left:10px; border:1px solid #dcdcdc; width:80%; border-radius:5px; margin-left:15px; height:30px; font-size:0.8em}
+.regBtn{width:95%;height:35px; margin-left:10px; background-color:#29AB87; border-radius:5px; cursor:pointer}

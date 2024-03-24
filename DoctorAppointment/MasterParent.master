@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterParent.master.cs" Inherits="MasterParent" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+    <link href="<%=rootPath + "css/generic.css" %>" rel="stylesheet" type="text/css" />
+    <link href="<%=rootPath + "css/Main.css" %>" rel="stylesheet" />
+    <link href="<%=rootPath + "css/Doctor.css" %>" rel="stylesheet" type="text/css" />
+    <link href="<%=rootPath + "Doctor/CSS/registerdoc.css" %>" rel="stylesheet" />
+
+    <link href="<%=rootPath + "LetsAdmin/css/toastr.min.css" %>" rel="stylesheet" />
+    <script src="<%=rootPath + "LetsAdmin/JS/customScript.js" %>"></script>
+    <script src="<%=rootPath + "LetsAdmin/JS/jquery-3.5.1.js" %>"></script>
+    <script src="<%=rootPath + "LetsAdmin/JS/toastr.min.js" %>"></script>
+    
+    <title>Login/Signup</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+       <div class="col_1200">
+            <div class="logo-container"></div>
+
+            <asp:Button ID="btnSignup" CssClass="signupBtn" runat="server" Text="Sign-Up" OnClick="btnSignup_Click"  />
+            <asp:Button ID="btnLogin" CssClass="loginBtn" runat="server" Text="Login" OnClick="btnLogin_Click" />
+            <div class="navBtn"></div>
+                           
+            <div class="navMain">
+                <ul class="float_right">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Find Doctors</a></li>
+                    <li><a href="#">Medicines</a></li>
+                    <li><a href="#">Lab Tests</a></li>
+                </ul>
+            </div>
+            <div class="float_clear"></div>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

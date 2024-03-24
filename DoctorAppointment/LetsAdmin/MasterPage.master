@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="LetsAdmin_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+
+    <%--<link href="css/generic.css" rel="stylesheet" />--%>
+    <link href="<%=rootPath + "LetsAdmin/css/MasterPage.css" %>" rel="stylesheet" />
+    <link href="<%=rootPath + "LetsAdmin/css/generic.css" %>" rel="stylesheet" />
+    <link href="<%=rootPath + "LetsAdmin/css/toastr.min.css" %>" rel="stylesheet" />
+    <link href="<%=rootPath + "LetsAdmin/css/registerdoc.css" %>" rel="stylesheet" />
+
+    <script src="<%=rootPath + "LetsAdmin/js/jquery-3.5.1.js" %>"></script>
+    <script src="<%=rootPath + "LetsAdmin/JS/toastr.min.js" %>"></script>
+    <script src="<%=rootPath + "LetsAdmin/JS/customScript.js" %>"></script>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <header>
+        <span class="size-regular display_Blk txtCenter">Doctor Appointment
+           
+            <br />
+            Accounting Panel </span>
+        <div class="float_clear"></div>
+    </header>
+    <div id="nav-container">
+        <div class="bg"></div>
+        <div class="button" tabindex="0">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </div>
+        <div id="nav-content" tabindex="0">
+            <ul id="accordion" class="accordion">
+                <li>
+                    <a href="<%=rootPath + "LetsAdmin/dashboard" %>" class="link dash">Dashboard</a>
+                </li>
+                <li>
+                    <div class="link master">Masters</div>
+                    <ul class="submenu">
+                        <li><a href="<%=rootPath + "LetsAdmin/specialty-master" %>">Specialty Master</a></li>
+                        <li><a href="<%=rootPath + "LetsAdmin/doctor-register" %>">Doctor Master</a></li>
+                        
+                    </ul>
+                    
+                </li>
+                <li>
+                    <div class="link tools">Tools</div>
+                    <ul class="submenu">
+                        <li><a href="#">Manage Stock</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="link logout">Log Out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="content">
+        <div class="pad_10">
+            <span class="space50"></span>
+            <span class="space50"></span>
+            <form id="form2" runat="server" autocomplete="off">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            var Accordion = function (el, multiple) {
+                this.el = el || {};
+                this.multiple = multiple || false;
+
+                // Variables privadas
+                var links = this.el.find('.link');
+                // Evento
+                links.on('click', { el: this.el, multiple: this.multiple }, this.dropdown)
+            }
+
+            Accordion.prototype.dropdown = function (e) {
+                var $el = e.data.el;
+                $this = $(this),
+                    $next = $this.next();
+
+                $next.slideToggle();
+                $this.parent().toggleClass('open');
+
+                if (!e.data.multiple) {
+                    $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+                };
+            }
+
+            var accordion = new Accordion($('#accordion'), false);
+        });
+
+    </script>
+
+
+</body>
+</html>

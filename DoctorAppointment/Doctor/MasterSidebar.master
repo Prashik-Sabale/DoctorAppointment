@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Doctor/MasterDoctor.master" AutoEventWireup="true" CodeFile="MasterSidebar.master.cs" Inherits="Doctor_MasterSidebar" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
+ <span class="space5"></span>
+    <div class="width100">
+        <div class="col_1200">
+            <div class="col_1_4">
+                <div class="pad_20">
+                    <div class="sidebarMenu">
+                        <div class="pad_20">
+                            <span class="space20"></span>
+                            <ul class="sbarList">
+                                <li><a href="#" class="sbarHome">Home</a></li>
+                                <li><a href="#" class="sbarAppoint">My Appointments</a></li>
+                                <li><a href="#" class="sbarLab">Lab Tests</a></li>
+                                <li><a href="#" class="sbarHelp">Help</a></li>
+                                <li><a href="#" class="sbarFeed">Feedback</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col_900">
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="float_clear"></div>
+        </div>
+    </div>
+</asp:Content>

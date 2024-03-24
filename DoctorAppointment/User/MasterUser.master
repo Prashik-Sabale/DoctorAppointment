@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterUser.master.cs" Inherits="User_MasterUser" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <link href="../css/generic.css" rel="stylesheet" />
+    <link href="../Doctor/CSS/doctor-master.css" rel="stylesheet" />
+    <link href="../Doctor/CSS/toastr.min.css" rel="stylesheet" />
+    <script src="../js/jquery-3.5.1.js"></script>
+    <script src="../Doctor/JS/customScript.js"></script>
+    <script src="../Doctor/JS/toastr.min.js"></script>
+
+    <script type="text/javascript">
+        function DropDown() {
+            var switchMenu = document.getElementById("switchMenu");
+            if (switchMenu.style.display == "block")
+                switchMenu.style.display = "none";
+            else
+                switchMenu.style.display = "block"
+        }
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header>
+        <div class="bgHeader">
+            <div class="header col_1200  head">
+                <a class="logoDoc">
+                    <img src="images/your-doctor-background.png" style="margin-top: 15px;" /></a>
+                <a id="dropBtn"></a>
+                <a href-="#" id="profileBtn">
+                    <img class="float_right" src="images/usericon.png" style="margin-top: 10px; padding-right: 7px" /></a>
+
+                <%-- <h1 class="wt-bold float_right margin mrgRgt10 margin-top"><%=docProfileMarkup %></h1>--%>
+
+
+
+
+                <ul id="switchMenu">
+                    <li>
+                        <a class="editProfile" href="edit-photo.aspx">Edit Profile Photo</a></li>
+                    <li>
+                        <a class="changePass" href="change-password.aspx">Change Password</a></li>
+                    <li>
+                        <a class="profSett" href="edit-profile.aspx">Edit Profile </a></li>
+                    <li class="logBorder">
+                        <a class="logout" href="../login.aspx?auth=out">Logout</a></li>
+
+                </ul>
+            </div>
+
+
+
+        </div>
+
+        <div class="float_clear"></div>
+    </header>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <script type="text/javascript">
+        $("#dropBtn").click(function () {
+            $
+                ("#switchMenu").slideToggle("5000");
+        });
+        </script>
+    <script type="text/javascript">
+        $("#profileBtn").click(function () {
+            $
+                ("#switchMenu").slideToggle("5000");
+        });
+        </script>
+</body>
+</html>

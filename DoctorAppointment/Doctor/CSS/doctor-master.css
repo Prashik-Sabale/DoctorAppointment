@@ -1,0 +1,67 @@
+﻿
+/*====================================Master Doctor=================================================*/
+
+.bgHeader{height:60px;box-shadow:5px 2px 4px #808080}
+.margin-top{margin-top:10px}
+.head{height:60px;position:relative;}
+#switchMenu{float:right;display:none;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;border-radius:5px;position:absolute;right:0px;top:60px}
+
+li{text-decoration:none;list-style:none;padding:10px;border-bottom: 1px solid #808080}
+a{padding:10px;text-decoration:none}
+img{padding-top:5px}
+#dropBtn { background: url('../images/dropdown.png') no-repeat ; height:24px;width:24px;float:right;padding-left:10px;margin-top:20px;cursor:pointer; }
+
+.editProfile { background: url('../images/editPhoto.png') no-repeat left center;padding-left:25px; cursor:pointer; color:#00a459; }
+.changePass { background: url('../images/password.png') no-repeat left center;padding-left:25px; cursor:pointer; color:#00a459;}
+.profSett { background: url('../images/settings.png')no-repeat left center;padding-left:25px; cursor:pointer; color:#00a459;}
+.logout { background: url('../images/signout.png')no-repeat left center;padding-left:25px; cursor:pointer; color:#00a459;}
+.logBorder{ border-bottom:none !important}
+
+
+
+/*=====================================Change Password=================================================*/
+
+
+.container{height:100%;}
+.passContainer{ height:100%; width:600px; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;}
+.lblPass{ font-weight:bold; }
+.txtPass{ width:97%;font-size:small; padding:7px; border-radius: 5px;  border: 1px solid #d1d1d1; }
+.btnSubmit{ width:100%;font-size:small; font-weight:bold; padding:7px; border-radius: 5px;  border: 1px solid #d1d1d1; background-color:#1F9170; color:#fff; cursor:pointer }
+
+/*=====================================Master Sidebar======================================================*/
+
+.bg_Grad{background: rgb(31,145,112); background: linear-gradient(90deg, rgba(31,145,112,1) 22%, rgba(255,255,255,1) 22%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 54%);}
+.sidebarMenu{background-color:#1F9170}
+.sbarList li{list-style-type: none; padding-left:10px;}
+.sbarList li a{padding:20px; display:inline-block; padding-left:30px}
+.sbarHome{background:url('../Images/home.png') no-repeat left center; text-decoration:none; color:#fff; }
+.sbarAppoint{background:url('../Images/appointicon.png') no-repeat left center; text-decoration:none; color:#fff;}
+.sbarPatient{background:url('../Images/appointicon.png') no-repeat left center; text-decoration:none; color:#fff;}
+.sbarLab{background:url('../Images/lab tests.png') no-repeat left center; text-decoration:none; color:#fff;}
+.sbarHelp{background:url('../Images/helpicon.png') no-repeat left center; text-decoration:none; color:#fff;}
+.sbarFeed{background:url('../Images/feedback.png') no-repeat left center; text-decoration:none; color:#fff;}
+.sbarList a:hover{color:#282828;}
+
+
+/*====================================Edit Profile===========================================================*/
+
+.onboardingTitle { background-color: #f0f0f5; border-bottom: 1PX solid #bbbbbb}
+.profileContainer{ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; width:800px;}
+.txtBox{background-color:#fff; padding:4px; padding-left:5px; border-radius:5px; border:1px solid #bbbbbb; display:inline-block; width:220px; }
+.ddrBox{background-color:#fff; padding:4px; padding-left:5px; border-radius:5px; border:1px solid #bbbbbb; display:inline-block; width:230px; }
+.txtBoxAddr{background-color:#fff; padding:4px; padding-left:5px; border-radius:5px; border:1px solid #bbbbbb; display:inline-block; width:495px}
+.btnSaveProfile{background-color:#1F9170; color:#fff; padding:5px 40px 5px 40px;  border-radius:5px; margin:0 auto; display:block; cursor:pointer}
+
+
+/*===================================Edit Profile Photo=========================================================*/
+
+
+.photo-container img{ width:180px; height:180px; margin:0 auto; border-radius:50%; display:block; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;}
+.edit-container{ width:200px; }
+.btnChange{ width:100%; padding:7px; border-radius: 5px; font-size:small;  border:1px solid #d1d1d1; background-color:#fff; background:url('../Images/edit.png')no-repeat right 10px center}
+.btnDel{ width:100%; padding:7px; border-radius: 5px; font-size:small; border:1px solid #d1d1d1; background-color:#fff; background:url('../Images/delete.png')no-repeat right 10px center;  }
+.btnChange:hover{ background-color:#1F9170; cursor:pointer;}
+.btnDel:hover{ background-color:red; cursor:pointer}
+
+.edit-photo-container{ width:300px;}
+

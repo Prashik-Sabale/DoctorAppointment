@@ -1,0 +1,475 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+}
+
+body {
+    background: #ffffff
+}
+
+.script {
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+
+/* Basic Common Column structure */
+.width100 {
+    width: 100%
+}
+
+.margin_auto {
+    margin: 0px auto
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+/* ========= Font Specific ========= */
+.tiny {
+    font-size: 0.8em
+}
+
+.small {
+    font-size: 0.9em
+}
+
+.regular {
+    font-size: 1.1em
+}
+
+.medium {
+    font-size: 1.5em
+}
+
+.large {
+    font-size: 2em
+}
+
+.extra-large {
+    font-size: 2.9em;
+    line-height: 1.5
+}
+
+.line-ht {
+    line-height: 1.5
+}
+
+.font-light {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200
+}
+
+.font-regular {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300
+}
+
+.font-semibold {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500
+}
+
+/.font-bold {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900
+}
+
+/
+
+/.zRegular {
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+
+/
+
+/float classes/
+.float_left {
+    float: left;
+    display: inline
+}
+
+.float_right {
+    float: right;
+    display: inline
+}
+
+.float_clear {
+    clear: both;
+}
+
+/text alignment/
+.txtCenter {
+    text-align: center;
+}
+
+.txtRight {
+    text-align: right;
+}
+
+/* padding */
+.pad_5 {
+    padding: 5px
+}
+
+.pad_10 {
+    padding: 10px
+}
+
+.pad_14 {
+    padding: 0.8em
+}
+
+.pad_15 {
+    padding: 15px
+}
+
+.pad_20 {
+    padding: 20px
+}
+
+.pad_25 {
+    padding: 1.5em
+}
+
+.pad_30 {
+    padding: 1.8em;
+}
+
+.pad_40 {
+    padding: 2.5em
+}
+
+.pad_50 {
+    padding: 3.1em
+}
+
+.home_pad_offset {
+    padding: 1.8em;
+}
+
+.pad_LR_30 {
+    padding: 0 1.8em;
+}
+
+.pad_L_15 {
+    padding-left: 0.9em
+}
+
+.pad_R_15 {
+    padding-right: 0.9em
+}
+
+.pad_LR_15 {
+    padding: 0em 0.9em;
+}
+
+.pad_LR_20 {
+    padding-left: 1.2em;
+    padding-right: 1.2em
+}
+
+.pad_LR_25 {
+    padding: 0em 1.5em;
+}
+
+.pad_LR_30 {
+    padding: 0em 1.8em;
+}
+
+.pad_L_30 {
+    padding-left: 1.8em
+}
+
+.pad_R_30 {
+    padding-right: 1.8em
+}
+
+.pad_TB_30 {
+    padding-bottom: 1.8em;
+    padding-top: 1.8em
+}
+
+.pad_TB_10 {
+    padding-bottom: 0.6em;
+    padding-top: 0.6em
+}
+
+.pad_TB_15 {
+    padding-bottom: 0.9em;
+    padding-top: 0.9em
+}
+
+.pad_TB_20 {
+    padding-bottom: 1.2em;
+    padding-top: 1.2em
+}
+
+.pad_TB_10 {
+    padding-bottom: 0.6em;
+    padding-top: 0.6em
+}
+
+/* margin */
+.mrg_B_5 {
+    margin-bottom: 0.3em;
+}
+
+.mrg_B_10 {
+    margin-bottom: 0.6em;
+}
+
+.mrg_B_15 {
+    margin-bottom: 0.9em;
+}
+
+.mrg_B_20 {
+    margin-bottom: 1.2em;
+}
+
+.mrg_B_25 {
+    margin-bottom: 1.5em;
+}
+
+.mrg_B_30 {
+    margin-bottom: 1.8em;
+}
+
+/spacer/
+.space5 {
+    height: 0.3em;
+    display: block;
+}
+
+.space10 {
+    height: 0.6em;
+    display: block;
+}
+
+.space20 {
+    height: 1.2em;
+    display: block;
+}
+
+.space25 {
+    height: 1.5em;
+    display: block;
+}
+
+.space30 {
+    height: 1.8em;
+    display: block;
+}
+
+.space35 {
+    height: 2.1em;
+    display: block;
+}
+
+.space40 {
+    height: 2.5em;
+    display: block;
+}
+
+.space50 {
+    height: 3.1em;
+    display: block;
+}
+
+/* coloumn structure*/
+.col_1200 {
+    width: 1200px;
+    margin: 0px auto
+}
+
+.col_1_2 {
+    width: 600px;
+    float: left;
+}
+
+.col_1_3 {
+    width: 400px;
+    float: left;
+}
+
+.col_1_4 {
+    width: 300px;
+    float: left;
+}
+
+.col_1_5 {
+    width: 240px;
+    float: left;
+}
+
+.col_1_6 {
+    width: 200px;
+    float: left;
+}
+
+.col_2_3 {
+    width: 800px;
+    float: left;
+}
+
+.col_980 {
+    width: 980px;
+}
+
+.col_800 {
+    width: 800px;
+    float: left
+}
+
+.col_400 {
+    width: 400px;
+    float: left
+}
+
+.col_340 {
+    width: 340px;
+    float: left
+}
+
+.col_570 {
+    width: 570px;
+    float: left
+}
+
+.col_760 {
+    width: 760px;
+    float: left
+}
+
+.col_380 {
+    width: 380px;
+    float: left
+}
+
+.col_900_full {
+    width: 900px
+}
+
+/position/
+.posRelative {
+    position: relative !important
+}
+
+.dis_block {
+    display: block
+}
+
+/border-radius/
+.border_r_3 {
+    border-radius: 3px;
+}
+
+.border_r_4 {
+    border-radius: 4px;
+}
+
+.border_r_5 {
+    border-radius: 5px;
+}
+
+.border_r_50 {
+    border-radius: 50%;
+}
+
+.noBorder {
+    border: none !important
+}
+
+/.border_box {
+    border: 1px solid #010101;
+    box-shadow: 9px 9px 16px #28282b, -9px -9px 16px rgba(255,255,255, 0.5);
+}
+
+/
+.border_box {
+    border: 2px solid #010101;
+    box-shadow: 6px 6px 15px rgba(46, 44, 44, 0.80)
+}
+
+.neu_shadow {
+    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px rgba(255,255,255, 0.5);
+}
+
+
+/liner/
+.liner {
+    height: 1px;
+    background-color: #511118;
+    display: block;
+    width: 100%;
+}
+
+/text transform/
+.upperCase {
+    text-transform: uppercase
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.txtDecNone {
+    text-decoration: none;
+}
+
+/Error Message Classes/
+.info, .success, .warning, .error {
+    margin: 10px 0px;
+    padding: 12px;
+    padding-left: 36px !important;
+    display: block
+}
+
+.info {
+    color: #00529B;
+    background: #BDE5F8 url(../images/icons/ico-info.png) no-repeat 12px center;
+}
+
+.success {
+    color: #4F8A10;
+    background: #DFF2BF url(../images/icons/ico-success.png) no-repeat 12px center;
+}
+
+.warning {
+    color: #9F6000;
+    background: #FEEFB3 url(../images/icons/ico-warn.png) no-repeat 12px center;
+}
+
+.error {
+    color: #D8000C;
+    background: #FFBABA url(../images/icons/ico-error.png) no-repeat 12px center;
+}
+
+
+#userLogin{ width:600px; background-color:#fff; margin:0 auto; border-radius:20px; padding: 10px; box-shadow:0 0 8px 0 #888888; }
+
+#Alogin{ text-align:center; font-size:large; color:#000; }
+
+#Iblock { width:500px; margin:0 auto; }
+
+.lableBox{ display: block; color:#000; }
+
+.TextBox1{ width:96.5%; line-height:1.6em; padding: 8px; border-radius: 10px; box-shadow: 0 2px 0 0 #ccc;}
+
+#Button1{ width:100%; padding: 8px; line-height: 1.6em; border-radius: 10px; box-shadow: 0 2px 0 0 #ccc; background:#fff; }
+
+#LinkButton1{ width: 100%; margin-left: 190px;  text-decoration:none; color:#000 }
+#LinkButton2{  width: 80px; text-decoration:none; color:#000}
+#remember{ float:left; color:#000}
+#LinkButton3 { float:right; text-decoration:none; color:#000}
+
+
+
+
+
+
+
+
